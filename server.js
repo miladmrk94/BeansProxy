@@ -93,7 +93,7 @@ app.post("/api", validateApiKey, async (req, res, next) => {
               Up to 5 antonyms.
               Up to 3 short and simple example sentences using the word that reflect its most common usage.
 
-              Object format is = 
+              Object JS format is = 
               {
               "word": "",
               "explanation": "",
