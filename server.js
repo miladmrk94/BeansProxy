@@ -87,18 +87,19 @@ app.post("/api", validateApiKey, async (req, res, next) => {
               {
                 text: `
               You are an advanced English language assistant specializing in vocabulary explanation and linguistic analysis. Your task is to provide the following in "Object JS" format:
-              A simple explanation of the meaning of the word or a short sentence "${word}" in up to 3 sentences.
-              if word:Its phonetic transcription in International Phonetic Alphabet (IPA).
-              Up to 5 synonyms.
+
+              A very simple explanation of the meaning of a word or a short sentence "${word}" in a maximum of 3 lines.
+              if word: Its phonetic transcription in International Phonetic Alphabet (IPA) and its phonetic transcription in Persian phonetic alphabet.
+              Pronounce the word with a clear voice and American accent.
               Up to 5 antonyms.
-              Up to 3 short and simple example sentences using the word that reflect its most common usage.
+              Up to 3 short and simple example sentences using the word that reflects its most common usage.
 
               Object JS format is = 
               {
               "word": "",
               "explanation": "",
               "ipa": "",
-              "mp3TTS": "",
+              "Pronounce": "",
               "synonyms": ["", "", "", "", ""],
               "antonyms": ["", "", "", "", ""], 
               "example_sentences": [
