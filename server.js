@@ -98,6 +98,7 @@ app.post("/api", validateApiKey, async (req, res, next) => {
               "word": "",
               "explanation": "",
               "ipa": "",
+              "mp3TTS": "",
               "synonyms": ["", "", "", "", ""],
               "antonyms": ["", "", "", "", ""], 
               "example_sentences": [
