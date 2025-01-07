@@ -79,7 +79,7 @@ app.post("/api", validateApiKey, async (req, res, next) => {
     }
 
     const response = await googleAPI.post(
-      `/models/gemini-1.5-flash:generateContent?key=${process.env.API_KEY}`,
+      `/models/gemini-2.0-flash-exp:generateContent?key=${process.env.API_KEY}`,
       {
         contents: [
           {
